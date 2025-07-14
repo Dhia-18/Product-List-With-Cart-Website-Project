@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/normalize.css">
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Desserts</h1>
+      <div id="items-list" class="items-list">
+        <!-- Desserts here -->
+      </div>
+    </section>
+    <aside class="cart-container">
+      <h2>Your Cart (<span class="cart-count">0</span>)</h2>
+      <div class="empty-cart">
+        <img src="assets/images/illustration-empty-cart.svg" alt="Two pieces of cake">
+        <p>Your added items will apear here</p>
+      </div>
+      <div class="full-cart hidden">
+        <div id="cart-list" class="cart-list">
+          <!-- Cart Items -->
+        </div>
+        <p class="order-total">Order Total <span class="total">$46.50</span></p>
+        <div class="carbon-neutral">
+          <img src="assets/images/icon-carbon-neutral.svg" alt="A green cloud">
+          <p>This is a <strong>carbon-neutral</strong> delivery</p>
+        </div>
+        <button id="confirm-btn" class="confirm-btn">Confirm Order</button>
+      </div>
+    </aside>
+  </main>
+  <div id="popover" class="confirmed-order-container hidden">""
+    <audio id="popup-sound" src="assets/Submit-Sound.wav" preload="auto"></audio>
+    <div class="popup-content">
+      <img class="check-img" src="assets/images/icon-order-confirmed.svg" alt="Check Icon">
+      <h1>Order Confirmed</h1>
+      <p class="enjoy-food">We hope you enjoy your food!</p>
+      <div class="order-items-container">
+        <div id="order-list" class="order-items">
+          <!-- Order Items -->
+        </div>
+        <p class="order-total">Order Total <span class="total-popover">$46.50</span></p>
+      </div>
+      <button id="clear-btn" class="clear-btn">Start New Order</button>
+    </div>
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
