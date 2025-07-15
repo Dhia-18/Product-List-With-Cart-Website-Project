@@ -32,7 +32,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
 - Live Site URL: [Product List With Cart](https://product-list-with-cart-dhia.netlify.app/)
 
 ## My process
